@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace CrossSolar.Controllers
 {
     [Route("[controller]")]
-    public class PanelController : Controller
+	
+	public class PanelController : Controller
     {
         private readonly IPanelRepository _panelRepository;
 
@@ -34,5 +35,7 @@ namespace CrossSolar.Controllers
 
             return Created($"panel/{panel.Id}", panel);
         }
-    }
+
+
+	}
 }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,5 +13,6 @@ namespace CrossSolar.Repository
         Task InsertAsync(T entity);
 
         Task UpdateAsync(T entity);
-    }
+		IEnumerable<T> GetAll();
+	}
 }

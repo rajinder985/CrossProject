@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using CrossSolar.Domain;
 using Microsoft.EntityFrameworkCore;
@@ -31,5 +32,10 @@ namespace CrossSolar.Repository
             _dbContext.Entry(entity).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
         }
-    }
+
+		public IEnumerable<T> GetAll()
+		{
+			return _dbContext.Set<T>().AsEnumerable();
+		}
+	}
 }

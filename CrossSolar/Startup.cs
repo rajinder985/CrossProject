@@ -43,7 +43,8 @@ namespace CrossSolar
                 app.UseExceptionHandler();
             }
 
-            app.UseMvc();
+
+			app.UseMvc();
         }
     }
 }

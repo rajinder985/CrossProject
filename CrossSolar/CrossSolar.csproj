@@ -5,14 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="..\..\..\..\New folder %25282%2529\cross-solar-dotnet\cross-solar-dotnet\CrossSolar\Controllers\Properties\launchSettings.json" />
+    <Content Include="..\..\..\..\New folder %25282%2529\cross-solar-dotnet\cross-solar-dotnet\CrossSolar\Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.DotNet.Cli.Utils" Version="2.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0-rc1-final" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3" />
+    <PackageReference Include="Nancy" Version="1.4.4" />
   </ItemGroup>
 
   <ItemGroup>
